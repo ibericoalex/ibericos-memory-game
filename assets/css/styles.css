@@ -84,3 +84,60 @@ header {
 .welcome-player {
     text-align: center;
 }
+
+/* Memory card game section*/
+
+/* to confirm if below code is needed*/
+.game-info, .score-info {
+    display: flex;
+    justify-content: space-around; 
+    padding: 16px 0;
+}
+
+.game-cards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    perspective: 1000px;
+    /* Create 3D flip effect - source: https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+}
+
+.game-cards img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.card {
+    width: calc(23%);
+    aspect-ratio: 1/1;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    /* Position cards in 3D - source: https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+    transition: transform .5s;
+}
+
+.card:active {
+    transform: scale(0.90);
+    transition: transform .1s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    border-radius: 15px;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
