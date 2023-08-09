@@ -90,8 +90,9 @@ header {
 /* to confirm if below code is needed*/
 .game-info, .score-info {
     display: flex;
+    /* justify-content: space-between; */
     justify-content: space-around; 
-    padding: 16px 0;
+    padding: 16px 10px;
 }
 /* above code */
 
