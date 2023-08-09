@@ -204,3 +204,67 @@ header {
     color: #f00;
     background-color: white;
 }
+
+/* Restart button styling */
+
+.restart-btn-section {
+    padding: 20px 0;
+}
+
+.restart-btn {
+    color: white;
+    background-color: #f00;
+    font-size: 1.2em;
+    padding: .3em;
+    border: 1px solid #f00;
+    margin: 0 auto;
+}
+
+.restart-btn:hover {
+    cursor: pointer;
+    color: #f00;
+    background-color: white;
+    transition: ease-in-out .1s;
+}
+
+.restart-btn:active {
+    transform: scale(1.1);
+    transition: ease-in-out 5ms;
+}
+
+/* 404 Message styling */
+
+.error-message {
+    color: #0d0d0d;
+    margin: 100px auto;
+    padding: 1em 3em;
+    max-width: 480px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+.error-btn-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.error-btn {
+    color: white;
+    background-color: #f00;
+    font-size: 1em;
+    padding: .3em;
+    border: 1px solid #f00;
+}
+
+.error-btn:hover {
+    cursor: pointer;
+    color: #f00;
+    background-color: white;
+    transition: ease-in-out .1s;
+}
+
+.error-btn:active {
+    transform: scale(1.1);
+    transition: ease-in-out 5ms;
+}
