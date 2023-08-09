@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Memory Game - Immerse yourself in Iberico Alex's artistic realm through playful engagement.">
+    <meta name="keywords"
+        content="iberico alex, memory game, artistic realm, playful engagement, immersion, aesthetics, creativity, interactive, exploration, art experience">
+    <meta name="author" content="Iberico Alex">
+
+    <title>Iberico's Memory Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+     <!-- Font awesome kit link for icons. -->
+     <script src="https://kit.fontawesome.com/f026990e6c.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+
+<body>
+        <!-- Header with text logo and music control section. -->
+    <header>
+            <div class="heading">
+                <h1>IBERICO'S MEMORY GAME</h1>
+            </div>
+            <div class="sound-toggle">
+                <p class="sound-intro"></p>
+                <audio src="assets/audio/VibeSlomow.mp3" id="soundtrack"></audio>
+                <button id="audio-toggle" aria-label="play soundtrack" class="sound-btn">
+                    <i class="fa-solid fa-play play-icon" id="play-icon"></i>
+                    <i class="fa-solid fa-pause pause-icon" id="pause-icon"></i>
+                </button>
+            </div>
+    </header>
+
+    <div class="error-message">
+        <h2>Oops! Looks like you took a wrong turn.</h2>
+        <p>This isn't the card you were looking for. But don't worry, you can shuffle back to the starting point.</p>
+        <form class="error-btn-section" action="index.html" method="get" target="_self">
+            <button class="error-btn" type="submit">Go Back Home!</button>
+         </form>
+    </div>
+    
+ 
+    <script src="assets/js/script.js"></script>
+    <noscript>Your browser currently does not support JavaScript or has it disabled. To play the game, please enable JavaScript in your settings.</noscript>
+
+</body>
+</html>
