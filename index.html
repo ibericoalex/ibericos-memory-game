@@ -25,7 +25,7 @@
 <body onload="openModal()">
     <!-- START MODAL - retrieves cutom user name -->
     <dialog class="modal" id="modal">
-        <h2>Iberico's memory game</h2>
+        <h2 class="modal-title">Iberico's memory game</h2>
         <form class="modal-form" method="dialog">
             <label for="player-name-input">Enter your username!</label>                
             <input id="player-name-input" name="player-name" class="modal-input" type="text" />                
@@ -136,9 +136,6 @@
         <h2 class="modal-heading">Well done <span class="player-name" id="player-name">Your</span></h2>
         
         <div class="score-info">
-            <div class="timer">
-                <h3>Time:</h3><span class="counter" id="timer">00:00</span>
-            </div> 
             <div class="current-score">
                 <h3>Score:</h3><span class="counter" id="score">0</span>
             </div>
