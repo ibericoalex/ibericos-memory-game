@@ -11,6 +11,7 @@ const timerEl = document.getElementById("timer"); // Timer display element
 const moveCounter = document.getElementById("move-counter"); // Move counter display
 const scoreEl = document.getElementById("score"); // Current score display
 const bestScoreEl = document.getElementById("best-score"); // Best score display
+const modalBestScoreEl = document.getElementById("modal-best-score"); // Best score display
 const endgameModal = document.getElementById("win-modal"); // Modal endgame element
 
 
@@ -68,6 +69,7 @@ function calcScore() {
   if (score > bestScore) {
     bestScore = score; // Add score to bestScores array
     bestScoreEl.innerHTML = bestScore; // Update best score display
+    modalBestScoreEl.innerHTML = bestScore;
     // storing bestScores array in local storage
     localStorage.setItem("bestScore", JSON.stringify(bestScore));
   }
@@ -226,9 +228,7 @@ function startGame() {
 
 // Stops the game
 function stopGame() {
-  
   clearInterval(timerInterval); // Stop the ongoing timer by clearing the timer
-
   calcScore();  // Calculate the final score of the game
 
   openWinModal();  // Open Endgame Modal to show game results
@@ -294,4 +294,3 @@ restartBtn.addEventListener("click", restartGame); // Restart the game without r
 modal.addEventListener('cancel', (event) => {
   event.preventDefault();
 }) 
-
