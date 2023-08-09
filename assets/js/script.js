@@ -162,7 +162,7 @@ function disableCards() {
   resetBoard();
 }
 
-// If two cards don't match, they are flipped back after 1s
+// If two cards don't match, they are flipped back after 0.5s
 function unflipCards() {
 
   lockBoard = true;
@@ -172,7 +172,7 @@ function unflipCards() {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
     resetBoard();
-  }, 1000);
+  }, 500);
 }
 
 // Resets the state of the game board after each move
