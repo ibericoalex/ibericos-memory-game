@@ -81,13 +81,14 @@ I personally tested the site on my iPhone 13 Pro and utilized DevTools to ensure
 
 ![Modal](./assets/documentation/iphone13-modal.PNG) 
 ![Index](./assets/documentation/iphone13-index.PNG)
+![Modal End](./assets/documentation/iphone13-modal-end.PNG) 
 
 - iPad Air
 
-![Home](./assets/documentation/iPad-home.png) 
-![Videos](./assets/documentation/iPad-videos.png)
-![About](./assets/documentation/iPad-about.png)
-![Contact](./assets/documentation/iPad-contact.png)
+![Modal](./assets/documentation/ipadAir-modal.png) 
+![Index](./assets/documentation/ipadAir-index.png)
+![Modal End](./assets/documentation/ipadAir-modal-end.png)
+
 
 ## **Bugs**
 During the website development process, no significant bugs were encountered. However, two minor issues were identified:
@@ -123,6 +124,15 @@ The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code
 No errors were returned through the official [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 
 ![css-validator-results](./assets/documentation/CSS-validator.png)
+
+### **JSHint JavaScript Validator**
+
+Using the official [JSHint-JavaScript-Validator](https://jshint.com/), 42 warnings were identified. However, my mentor advised me to ignore these warnings since they are not pertinent to our context.
+
+The code flags an unused variable on line 41 of the JS file, referring to openModal. This function is invoked directly from the HTML when the "Start Game!" button on the initial modal is pressed.
+
+
+![JSHint-JavaScript-Validator](./assets/documentation/JS-Hint.png)
 
 ### **Performance Testing**
 
