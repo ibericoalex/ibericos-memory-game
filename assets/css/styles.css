@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 }
 
-/* Style settings for body and common HTML elements */
+/* Body and common HTML elements styling */
 body, h1, h2, p, div {
     box-sizing: border-box;    
 }
@@ -75,7 +75,7 @@ header {
     text-shadow: 0px 0px 6px #959595;
 }
 
-/* Game description section*/
+/* Game description styling */
 
 .description {
     padding: 0 10px; /* add right and left padding to text to align with cards*/
@@ -85,7 +85,7 @@ header {
     text-align: center;
 }
 
-/* Memory card game section*/
+/* Memory card game styling */
 
 /* to confirm if below code is needed*/
 .game-info, .score-info {
@@ -142,4 +142,65 @@ header {
 
 .front {
     transform: rotateY(180deg);
+}
+
+/* Modal styling */
+
+.modal, .modal-form {
+    display: grid;
+}
+
+.modal {
+    color: #0d0d0d;
+    margin: 100px auto;
+    padding: 1em 3em;
+    max-width: 480px;
+    min-width: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+.win-modal {
+    display: none;
+}
+
+.modal::backdrop {
+    background: #0d0d0d;
+    opacity: .8;
+}
+
+.modal-form {
+    gap: .8em;
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+
+.modal-heading, .modal-start-btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-heading {
+    font-size: 1.8rem;
+}
+
+.modal-input {
+    border: 1px solid #949494;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding: .3em;
+}
+
+.modal-start-btn {
+    color: white;
+    background-color: #f00;
+    font-size: 1.2em;
+    padding: .1em;
+    border: 1px solid #f00;
+    transition: ease-in-out .1s;
+}
+
+.modal-start-btn:hover {
+    cursor: pointer;
+    color: #f00;
+    background-color: white;
 }
