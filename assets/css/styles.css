@@ -61,7 +61,7 @@ header {
 
 .sound-toggle {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 40px;
 }
 
@@ -267,4 +267,65 @@ header {
 .error-btn:active {
     transform: scale(1.1);
     transition: ease-in-out 5ms;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    body {
+        width: 65vw;
+    }
+}
+
+/* For larger to medium screens size from 950px wide and down */
+@media screen and (max-width: 950px) {
+    body {
+        width: 70vw;
+    }
+}
+
+/* For larger to medium screens size from 650px wide and down */
+@media screen and (max-width: 730px) {
+    body {
+        width: 80vw;
+        font-size: 1rem;
+    }
+
+    header h1 {         
+        font-size: 2rem;     
+    }
+}
+
+/* For larger to medium screens size from 650px wide and down */
+@media screen and (max-width: 620px) {
+    body {
+        width: 90vw;
+        font-size: .9rem;
+    }
+
+    header h1 {         
+        font-size: 1.5rem;     
+    }
+
+    .modal {
+        min-width: 300px;
+    }
+
+    .sound-toggle {
+        position: absolute;
+        top: -5px;
+        right: 10px;
+    }
+    
+    .sound-btn {
+        font-size: 1rem;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        margin: .5em 0 0 1em;
+        color: #f00;
+        text-shadow: 0px 0px 6px #959595;
+    }
+    
 }
