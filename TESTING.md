@@ -9,10 +9,11 @@
 3. [Validator Testing](#validator-testing "Validator Testing")
    - [HTML Validator](#html-validator "HTML Validator")    
    - [CSS Validator](#css-validator "CSS Validator")
+   - [JSHint JavaScript Validator](#jshint-javascript-validator "JSHint JavaScript Validator")
    - [Performance Testing](#performance-testing "Performance Testing")
 
     
-    ## **Testing**
+## **Testing**
 
 ### **User Testing**
 After deploying the site, I shared the link with my family and friends for testing purposes, and I received positive feedback from everyone. They found the site and game easy to use, and it displayed beautifully on all of their devices without any issues.
@@ -78,46 +79,35 @@ Once the site was published on GitHub Pages, I conducted thorough testing on mul
 I personally tested the site on my iPhone 13 Pro and utilized DevTools to ensure responsiveness across various screen sizes. The site performed seamlessly on all devices, and the content adjusted flawlessly as intended for each screen size.
 
 - Iphone Pro 13
-
-![Modal](./assets/documentation/iphone13-modal.PNG) 
-![Index](./assets/documentation/iphone13-index.PNG)
-![Modal End](./assets/documentation/iphone13-modal-end.PNG) 
+ 
+![Index](./assets/documentation/iphone13.png)
+ 
 
 - iPad Air
 
-![Modal](./assets/documentation/ipadAir-modal.png) 
-![Index](./assets/documentation/ipadAir-index.png)
-![Modal End](./assets/documentation/ipadAir-modal-end.png)
+![Index](./assets/documentation/ipadAir.png)
+
 
 
 ## **Bugs**
-During the website development process, no significant bugs were encountered. However, two minor issues were identified:
+During the website development process, no significant bugs were encountered. However, one minor issue was identified:
 
-1. **Image Dimensions**: It was discovered that the images had dimensions of 1920x1080px, while only needing to be 500px in length on the widest side. This was adjusted to optimize display and performance.
-
-2. **Navigation Bar on Smallest Screen Size**: On screens with a width of 320px, there is a slight overlap in the navigation bar links. 
+1. **End Modal on Smaller Screen Size**: The modal display is not optimized for smaller width screens. Given more time, I would delve deeper and refine the media queries for this size.
 
 ## **Validator Testing**
 
 ### **HTML Validator**
 
-The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code was passed in as a URL and returned no errors.
+The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code was passed in as a URL and returned follwiing message: "Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed."
 
-- [Portfolio Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fibericoalex.github.io%2Fiberico-alex-photography%2Findex.html)
+   **=> After consultation with my mentor, I was advised to use sections instead of divs, as it's the best practice in this context.**
+ 
+- [Index Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fibericoalex.github.io%2Fibericos-memory-game%2F)
+![Index Page](./assets/documentation/HTML-validator.png)
 
-![Portfolio Page Validation](./assets/documentation/html-validator-portfolio.png)
+After consultation with my mentor, I was advised to use sections instead of divs, as it's the best practice in this context.
 
-- [Videos Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fibericoalex.github.io%2Fiberico-alex-photography%2Fvideos.html)
 
-![Videos Page Validation](./assets/documentation/html-validator-portfolio.png)
-
-- [About Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fibericoalex.github.io%2Fiberico-alex-photography%2Fabout.html)
-
-![About Page Validation](./assets/documentation/html-validator-portfolio.png)
-
-- [Contact Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fibericoalex.github.io%2Fiberico-alex-photography%2Fcontact.html)
-
-![Contact Page Validation](./assets/documentation/html-validator-portfolio.png)
 
 ### **CSS Validator**
 
@@ -138,18 +128,10 @@ The code flags an unused variable on line 41 of the JS file, referring to openMo
 
 The website underwent performance testing using the Lighthouse feature in Google Chrome's Developer Tools. The results can be found below. I am very pleased with the results.
 
-- Portfolio page
+- Desktop performance testing
 
-![css-validator-results](./assets/documentation/lighthouse-portfolio.png)
+![Desktop](./assets/documentation/lighthouse-desktop-index.png)
 
-- Videos page
+- Mobile performance testing
 
-![css-validator-results](./assets/documentation/lighthouse-videos.png)
-
-- About page
-
-![css-validator-results](./assets/documentation/lighthouse-about.png)
-
-- Contact page
-
-![css-validator-results](./assets/documentation/lighthouse-contact.png)
+![Mobile](./assets/documentation/lighthouse-mobile-index.png)
