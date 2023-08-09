@@ -128,7 +128,26 @@
             <img class="front" src="assets/images/Matthias.jpg" alt="matthias">
             <img class="back" src="assets/images/back-card.jpg" alt="generic back side card mentioning iberico alex photography">
         </div>
-    </section>       
+    </section>    
+
+    <!-- END Modal - Win message + reset button. -->
+    <dialog class="modal win-modal" id="win-modal">
+        <h2 class="modal-heading">Well done <span class="player-name" id="player-name">Your</span></h2>
+        
+        <div class="score-info">
+            <div class="current-score">
+                <h3>Score:</h3><span class="counter" id="score">0</span>
+            </div>
+            <div class="best-score">
+                <h3>Best score:</h3><span class="counter" id="best-score">0</span>
+            </div>
+        </div>
+
+        <!-- Restart button. -->
+        <div class="restart-btn-section">
+            <button class="restart-btn" id="restart-btn" aria-label="restart game">Go again!</button>   
+        </div>                    
+    </dialog>
 
     <script src="assets/js/script.js"></script>
     <noscript>Your browser currently does not support JavaScript or has it disabled. To play the game, please enable JavaScript in your settings.</noscript>
