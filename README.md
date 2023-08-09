@@ -18,20 +18,25 @@ Live deployment link can be found [here](https://ibericoalex.github.io/ibericos-
    - [Fonts](#fonts "Fonts")
    - [Wireframes](#wireframes "Wireframes")
 3. [Features](#features "Features")
-   - [Common Features](#common-features "Common Features")    
-   - [Portfolio](#portfolio "Portfolio")
-   - [Videos](#videos "Videos")
-   - [About](#about "About")
-   - [Contact](#contact "contact")
+   - [Starting Modal](#starting-modal "Starting Modal")    
+   - [Logo](#Logo "Logo")
+   - [Music Player](#Music-Player "Music Player")
+   - [Favicon](#Favicon "Favicon")
+   - [Game Description](#Game-Description "Game Description")
+   - [Game Metrics](#Game_metrics "Game metrics")
+   - [Memory Card Game](#Memory-Card-Game "Memory Card Game")
+   - [Endgame Modal](#Endgame-Modal "Endgame Modal")
+   - [404 error message page](#404-error-message-page "404 error message page")
 4. [Technologies, Languages & Programs Used](#technologies-languages--programs-used)
 5. [Testing](#testing "Testing")
 6. [Deployment](#deployment "Deployment")
     - [Local Deployment](#local-deployment "Local Deployment")
-8. [Credits](#credits "Credits")
+7. [Credits](#credits "Credits")
     - [Code](#code "Code")
     - [Content](#content "Content")
     - [Design](#design "Design")
     - [Media](#media "Media")
+8. [Acknowledgements](#Acknowledgements "Acknowledgements")
 
 ## **User Stories**
 
@@ -48,6 +53,8 @@ Live deployment link can be found [here](https://ibericoalex.github.io/ibericos-
 - As a **user**, I want **to view the highest score achieved** so that **I can challenge myself to beat it**.
 
 - As a **user**, I want **to see my scores and receive a congratulatory message after completing the game** so that **I can feel recognized and inspired to play again**.
+
+- As a **user**, I want **to encounter a 404 error page when I unintentionally land on a wrong link** so that **I can be guided back to the main page seamlessly**.
 
 
 ## **Design**
@@ -76,56 +83,56 @@ Before proceeding with the HTML, CSS or JavaScript coding, I made use of Balsami
 
 ## **Features**
 
-### 1 - Starting Modal
+### Starting Modal
 
 Players can enter their name, offering a gameplay experience that's personalized and tailored to them.
 Additionally, this section provides instructions on "How to Play".
 
 ![starting modal](./assets/documentation/starting-modal-screenshot.png)
-### 2 - Logo
+### Logo
 
 The logo, prominently displayed at the top, reveals the game's purpose and theme to the user.
 
 ![Logo](./assets/documentation/logo.png)
 
-### 3 - Music Player
+### Music Player
 
 Located at the top right is a play button, granting users the option to enjoy music during their game. To halt the music, simply hit the pause button. This feature enhances the game with an auditory dimension, immersing the player further.
 
 ![Logo](./assets/documentation/play-btn.png)
 ![Logo](./assets/documentation/pause-btn.png)
 
-### 4 - Favicon
+### Favicon
 
 The favicon displayed on the browser tab encapsulates the branding of Iberico Alex Photography, providing a small yet impactful visual representation of the website's identity.
 
 ![Favicon](./assets/documentation/Logo-favicon.png)
 
-### 5 - Game Description
+### Game Description
 
 The Game Description offers a brief insight into Iberico Alex's artistry while introducing the memory card game. Note: Instructions on "How to Play" were already presented in the initial modal.
 
 ![Game Description](./assets/documentation/game-description.png)
 
-### 6 - Game's metrics
+### Game metrics
 
 This section lets you monitor the elapsed time and the number of moves made, offering real-time performance insights. Additionally, it displays your top scores from previous games..
 
 ![Game Description](./assets/documentation/game-info.png)
 
-### 7 - Memory Card Game
+### Memory Card Game
 
 Iberico's Memory Game features a total of 12 cards, randomly arranged within the grid. The goal is to match each card pair using the fewest moves and in the shortest time. Cards initially face downwards, but when tapped, they disclose a captivating photo from Iberico Alex's portfolio.
 
 ![Game Description](./assets/documentation/memory-cards.png)
 
-### 8 - Endgame Modal
+### Endgame Modal
 
 Upon successfully matching all card pairs, a congratulatory pop-up emerges, presenting your current score and contrasting it with your previous best if you've played earlier. A CTA (call-to-action) button reading "Play again!" beckons you to take another shot and aim for a better score.
 
 ![Game Description](./assets/documentation/endgame-modal-screenshot.png)
 
-### 9 - 404 error message page
+### 404 error message page
 
 A tailored 404 error page is in place for users who may stray via a faulty link. Mirroring the primary site's design, this page presents a CTA button to redirect users back to the intended content.
 
