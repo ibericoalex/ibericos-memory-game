@@ -15,47 +15,60 @@
     ## **Testing**
 
 ### **User Testing**
-After deploying the site, I shared the link with my family and friends for testing purposes, and I received positive feedback from everyone. They found the site easy to navigate, and it displayed beautifully on all of their devices without any issues.
+After deploying the site, I shared the link with my family and friends for testing purposes, and I received positive feedback from everyone. They found the site and game easy to use, and it displayed beautifully on all of their devices without any issues.
 
 
 ### **Manual Testing**
 Thorough manual testing was conducted during the project's development, aligning with the User Stories. The final results of the testing are provided below.
 
-- As a **user**, I want **to be able to view a consistent colour scheme across the website** so that it **provides a seamless and harmonious browsing experience**.
+- As a **user**, I want **to have the website's name clearly presented at the header** so that **I can immediately recognize its purpose and theme**.
 
 | **Test** | Issue | Result |
 | -------- | ----- | ------ |
-| 1        | The website features a consistent color palette, maintaining visual harmony throughout. | PASS   |
+| 1        | The header instantly reveals the website's purpose and theme. | PASS   |
 
-- As a **user**, I want **to be able to find and access the navigation bar** so that I can **navigate effortlessly through the platform**.
-
-| **Test** | Issue | Result |
-| -------- | ----- | ------ |
-| 2        | The navigation bar appears on every page, ensuring seamless user navigation between pages. | PASS   |
-
-- As a **user**, I want **to be able to view the footer section** so that I can **find social media links**.
+- As a **user**, I want **to have the option to switch the game's music on and off** so that **I can customize my gaming experience**.
 
 | **Test** | Issue | Result |
 | -------- | ----- | ------ |
-| 3        | The footer appears on every page of the website, featuring social media links that enhance and complement the overall site experience. | PASS   |
+| 2        | The game provides an easily accessible option for users to toggle the music on and off, enhancing user experience. | PASS   |
 
-- As a **user**, I want **to be able to explore Iberico Alex's work, including both photos and videos** so that I  **can appreciate the artist's talent and style**.
-
-| **Test** | Issue | Result |
-| -------- | ----- | ------ |
-| 4        | Users can effortlessly access and enjoy both photos and videos on the respective pages. | PASS   |
-
-- As a **user**, I want **to be able to learn more about the photographer** so that I can **ensure that his background and artistic approach align with my preferences**.
+- As a **user**, I want **to access clear instructions at the beginning of the game** so that **I can understand and play the game properly**.
 
 | **Test** | Issue | Result |
 | -------- | ----- | ------ |
-| 5        | Users can learn more about the photographer's background and experience with ease. | PASS   |
+| 3        | Clear and concise instructions are available at the game's start, ensuring players can understand and play the game effectively. | PASS   |
 
-- As a **user**, I want **to be able to contact the artist** so that I can **inquire about the services offered**.
+- As a **user**, I want **to enter my name into the game** so that **my gameplay feels more personalized and tailored to me**.
 
 | **Test** | Issue | Result |
 | -------- | ----- | ------ |
-| 6        | Users can conveniently fill in the contact form and effortlessly reach out to the artist for any inquiries or information. | PASS   |
+| 4        | The game has a feature where players can input their name for a more tailored gaming experience. | PASS   |
+
+- As a **user**, I want **to visibly observe the game's ongoing metrics like time and current moves** so that **I can track my performance in real-time**.
+
+| **Test** | Issue | Result |
+| -------- | ----- | ------ |
+| 5        | The game offers real-time metrics including time and moves, allowing players to monitor their performance. | PASS   |
+
+- As a **user**, I want **to view the highest score achieved** so that **I can challenge myself to beat it**.
+
+| **Test** | Issue | Result |
+| -------- | ----- | ------ |
+| 6        | The game displays the highest score, giving players a benchmark to aim for in their gameplay. | PASS   |
+
+- As a **user**, I want **to see my scores and receive a congratulatory message after completing the game** so that **I can feel recognized and inspired to play again**.
+
+| **Test** | Issue | Result |
+| -------- | ----- | ------ |
+| 7        | Upon game completion, users can view their scores and receive a congratulatory message, enhancing player engagement. | PASS   |
+
+- As a **user**, I want **to encounter a 404 error page when I unintentionally land on a wrong link** so that **I can be guided back to the main page seamlessly**.
+
+| **Test** | Issue | Result |
+| -------- | ----- | ------ |
+| 8        | The game's platform incorporates a user-friendly 404 error page, guiding users back to the main page if they access a non-existent link. | PASS   |
+
 
 ### **Cross-browser Testing**
 
@@ -66,10 +79,8 @@ I personally tested the site on my iPhone 13 Pro and utilized DevTools to ensure
 
 - Iphone Pro 13
 
-![Home](./assets/documentation/iphone13-home.jpg) 
-![Videos](./assets/documentation/iphone13-videos.PNG)
-![About](./assets/documentation/iphone13-about.PNG)
-![Contact](./assets/documentation/iphone13-contact.PNG)
+![Modal](./assets/documentation/iphone13-modal.PNG) 
+![Index](./assets/documentation/iphone13-index.PNG)
 
 - iPad Air
 

@@ -19,13 +19,13 @@ Live deployment link can be found [here](https://ibericoalex.github.io/ibericos-
    - [Wireframes](#wireframes "Wireframes")
 3. [Features](#features "Features")
    - [Starting Modal](#starting-modal "Starting Modal")    
-   - [Logo](#Logo "Logo")
-   - [Music Player](#Music-Player "Music Player")
-   - [Favicon](#Favicon "Favicon")
-   - [Game Description](#Game-Description "Game Description")
-   - [Game Metrics](#Game_metrics "Game metrics")
-   - [Memory Card Game](#Memory-Card-Game "Memory Card Game")
-   - [Endgame Modal](#Endgame-Modal "Endgame Modal")
+   - [Logo](#logo "Logo")
+   - [Music Player](#music-player "Music Player")
+   - [Favicon](#favicon "Favicon")
+   - [Game Description](#game-description "Game Description")
+   - [Game Metrics](#game_metrics "Game metrics")
+   - [Memory Card Game](#memory-card-game "Memory Card Game")
+   - [Endgame Modal](#endgame-modal "Endgame Modal")
    - [404 error message page](#404-error-message-page "404 error message page")
 4. [Technologies, Languages & Programs Used](#technologies-languages--programs-used)
 5. [Testing](#testing "Testing")
@@ -36,7 +36,7 @@ Live deployment link can be found [here](https://ibericoalex.github.io/ibericos-
     - [Content](#content "Content")
     - [Design](#design "Design")
     - [Media](#media "Media")
-8. [Acknowledgements](#Acknowledgements "Acknowledgements")
+8. [Acknowledgements](#acknowledgements "Acknowledgements")
 
 ## **User Stories**
 
@@ -197,4 +197,4 @@ This repository can be cloned and run locally with the following steps:
 - All the photos displayed on the website were captured by me.
 
 ## **Acknowledgements**
-A special acknowledgment to my mentor, Akshat Garg, for his instrumental guidance as I navigated this project within a mere 2 to 3 days. His promptness and availability played a pivotal role, and I am profoundly thankful for it.
+I extend heartfelt gratitude to my mentor, Akshat Garg, for his instrumental guidance as I navigated this project within a mere 2 to 3 days. His promptness and availability played a pivotal role, and I am profoundly thankful for it.
