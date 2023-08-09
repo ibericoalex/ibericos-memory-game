@@ -11,7 +11,7 @@ const timerEl = document.getElementById("timer"); // Timer display element
 const moveCounter = document.getElementById("move-counter"); // Move counter display
 const scoreEl = document.getElementById("score"); // Current score display
 const bestScoreEl = document.getElementById("best-score"); // Best score display
-const modalBestScoreEl = document.getElementById("modal-best-score"); // Best score display
+const modalBestScoreEl = document.getElementById("modal-best-score"); // Best score display for end modal
 const endgameModal = document.getElementById("win-modal"); // Modal endgame element
 
 
@@ -69,7 +69,7 @@ function calcScore() {
   if (score > bestScore) {
     bestScore = score; // Add score to bestScores array
     bestScoreEl.innerHTML = bestScore; // Update best score display
-    modalBestScoreEl.innerHTML = bestScore;
+    modalBestScoreEl.innerHTML = bestScore; // Update best score display on end modal
     // storing bestScores array in local storage
     localStorage.setItem("bestScore", JSON.stringify(bestScore));
   }
