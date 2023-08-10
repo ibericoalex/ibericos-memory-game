@@ -1,13 +1,14 @@
-/* Global reset styles for a consistent starting point */
+/* Universal reset styles for uniform start */
 * {
     padding: 0;
     margin: 0;
     border: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    box-sizing: border-box;     /* Ensures padding and border are included in total width/height */
+    scroll-behavior: smooth;    /* Enables smooth scrolling */
 }
 
-/* Body and common HTML elements styling */
+
+/* Styling for body and standard HTML elements */
 body, h1, h2, p, div {
     box-sizing: border-box;    
 }
@@ -16,24 +17,24 @@ body {
     font-family: 'Nunito', sans-serif;    
     background-color: #f4f4f4;
     color: #0d0d0d;
-    width: 50vw;          /* Body width set to half of the viewport width */
-    margin: 0 auto;       /* Center the body content horizontally */
-    font-size: 1.2rem;     /* Default font size */
+    width: 50vw;    /* Body width set to half of the viewport width */
+    margin: 0 auto;     /* Center the body content horizontally */
+    font-size: 1.2rem;      /* Default font size */
     padding-bottom: 40px;
 }
 
 h1 {
     color: #f00;          
-    font-size: 3rem;        
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-size: 3rem;    /* Large font size for main headings */
+    font-family: 'Roboto', sans-serif;      /* Specific font family for headings */
+    font-weight: 900;   /* Bold weight */
+    text-transform: uppercase;      /* Transforms text to uppercase */
 
 }
 
 h2 {
     color: #f00;          
-    font-size: 1.6rem;        
+    font-size: 1.6rem;      /* Medium font size for sub-headings */
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     padding: 10px 0;
@@ -42,140 +43,132 @@ h2 {
 h3 {
     display: block;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.17em;
+    font-size: 1.3rem;      /* Small font size for sub-headings */
     font-weight: bold;
 }
 
 p {
-    padding-bottom: 20px;
-    text-align: justify;
+    padding-bottom: 20px;       /* Adds spacing below paragraphs */
+    text-align: justify;        /* Text is spread out to align with both the left and right columns */
 }
 
 header {
-    text-align: center;
+    text-align: center;     /* Centers the content */
     padding: 20px 0;
 }
 
 header a {
-    text-decoration: none;
+    text-decoration: none;      /* Removes the underline from links in the header */
 }
 
-/* Sound button styling */
 
+/* Sound button styling */
 .sound-toggle {
-    position: fixed;
+    position: fixed;    /* Fixed position on the screen */
     top: .3rem;
     right: 3rem;
 }
 
 .sound-btn {
-    font-size: 1.5rem;
-    background-color: transparent;
-    border: none;
-    color: #fff;
+    font-size: 1.5rem;      /* Icon size */
+    border: none;       /* Removes default border */
     margin: .5em 0 0 1em;
     color: #f00;
-    text-shadow: 0px 0px 6px #959595;
+    text-shadow: 0px 0px 6px #525252;   /* Adds a shadow to the icon for emphasis */
 }
 
-/* Game description styling */
 
+/* Game description styling */
 .description {
-    padding: 0 10px; /* add right and left padding to text to align with cards*/
+    padding: 0 10px;    /* Adds left and right padding text for alignment with cards */
 }
 
 .welcome-player {
-    text-align: center;
+    text-align: center;     /* Centered welcome message for the player */
 }
 
 
-/* Memory card game styling */
-
+/* Styling for the memory card game */
 .game-info, .score-info {
-    display: flex;
-    /* justify-content: space-between; */
-    justify-content: space-around; 
+    display: flex;      /* Makes child elements line up in a row */
+    justify-content: space-around;      /* Spaces child elements evenly */
     padding: 16px 10px;
 }
 
 
 .game-cards {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    perspective: 1000px;
-    /* Create 3D flip effect - source: https://marina-ferreira.github.io/tutorials/js/memory-game/ */
+    margin: auto;       /* Centers the cards horizontally */
+    display: flex;      /* Makes cards line up in a row */
+    flex-wrap: wrap;    /* Allows cards to wrap to the next line if there's no space */
+    justify-content: space-around;      /* Spaces cards evenly */
+    perspective: 1000px;    /* Perspective for 3D flip effect */
+    /* 3D flip effect source: https://marina-ferreira.github.io/tutorials/js/memory-game/ */
 }
 
 .game-cards img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
+    width: 100% !important;     /* Forces the image to take up the full width of its container */
+    height: 100% !important;    /* Forces the image to take up the full height of its container */
+    object-fit: cover !important;   /* Forces the image to cover its container without distorting its aspect ratio */
 }
 
 .card {
-    width: calc(23%);
-    aspect-ratio: 1/1;
-    margin: 5px;
+    width: 23%;
+    aspect-ratio: 1/1;      /* Ensures the card is always square */
+    margin: 5px;        /* Spacing around the card */
     position: relative;
-    cursor: pointer;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    /* Position cards in 3D - source: https://marina-ferreira.github.io/tutorials/js/memory-game/ */
-    transition: transform .5s;
+    cursor: pointer;    /* Makes the mouse cursor change to a hand when hovering over the card */
+    transform: scale(1);    /* Sets the default scale for the card */
+    transform-style: preserve-3d;   /* Preserves the 3D positioning of child elements */    
+    transition: transform .5s;      /* Animates any transform changes over 0.5 seconds */
+    /* 3D positioning - source: https://marina-ferreira.github.io/tutorials/js/memory-game/ */
 }
 
-.card:active {
-    transform: scale(0.90);
-    transition: transform .1s;
+.card:active {                  /* Active card style when it's being clicked on */
+    transform: scale(0.90);     /* Slightly shrinks the card */
+    transition: transform .1s;      /* Speeds up the transition for a responsive feel */
 }
 
-.card.flip {
-    transform: rotateY(180deg);
+.card.flip {                        /* Flipped card style */
+    transform: rotateY(180deg);     /* Rotates the card around its Y-axis */
 }
 
 .front, .back {
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    border-radius: 15px;
-    backface-visibility: hidden;
+    position: absolute;     /* Takes the front/back out of the document flow and positions them directly over the card */
+    border-radius: 15px;    /* Rounded corners */
+    backface-visibility: hidden;    /* Ensures the front/back aren't visible when the card is flipped */
 }
 
 .front {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg);     /* Initially rotates the front of the card to be hidden */
 }
 
 /* Modal styling */
-
 .modal, .modal-form {
-    display: grid;
+    display: grid;      /* Uses grid layout for positioning child elements */
 }
 
 .modal {
     color: #0d0d0d;
-    margin: 100px auto;
+    margin: 100px auto;     /* Centers the modal horizontaly with a 100px margin at the top and bottom */
     padding: 1em 3em;
-    max-width: 570px;
-    min-width: 460px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: white;
+    max-width: 570px;       /* Sets the maximum width of the modal */
+    min-width: 460px;       /* Sets the minimum width of the modal */
+    background-color: #fafafa;
 }
 
 .modal-title {
-    font-size: 2.3rem;
-    text-transform: uppercase;
+    font-size: 2.3rem;      /* Sets the font size for the modal title */
+    text-transform: uppercase;  /* Converts all letters in the title to uppercase */
 
 }
 
 .win-modal {
-    display: none;
+    display: none;      /* Hides the modal by default, to be toggle with JS code to show the modal when someone wins */
 }
 
 .modal::backdrop {
-    background: #0d0d0d;
-    opacity: .8;
+    background: #0d0d0d;    /* Sets the background color for the modal backdrop to a dark color */
+    opacity: .8;    /* Makes the backdrop semi-transparent */
 }
 
 .modal-form {
@@ -193,29 +186,28 @@ header a {
 }
 
 .modal-input {
-    border: 1px solid #949494;
-    border-radius: 2px;
-    font-size: 1rem;
-    padding: .3em;
+    border: 1px solid #525252;  /* Adds a light gray border around the input */
+    border-radius: 2px;     /* Slightly rounds the edges of the input */
+    font-size: 1rem;        /* Sets the font size for the input */
+    padding: .5em;      /* Sets internal padding for the input */
 }
 
 .modal-start-btn {
     color: white;
     background-color: #f00;
     font-size: 1.2em;
-    padding: .1em;
+    padding: .1em;      /* Internal padding for the start button */
     border: 1px solid #f00;
-    transition: ease-in-out .1s;
+    transition: ease-in-out .1s;    /* Animation transition for hover effects */
 }
 
 .modal-start-btn:hover {
-    cursor: pointer;
-    color: #f00;
-    background-color: white;
+    cursor: pointer;        /* Hand cursor on hover for better UX */
+    color: #f00;        /* Changes the text color on hover */
+    background-color: white;    /* Changes the background color on hover */
 }
 
 /* Restart button styling */
-
 .restart-btn-section {
     padding: 20px 0;
 }
@@ -230,31 +222,30 @@ header a {
 }
 
 .restart-btn:hover {
-    cursor: pointer;
+    cursor: pointer;    /* Hand cursor on hover */
     color: #f00;
     background-color: white;
-    transition: ease-in-out .1s;
+    transition: ease-in-out .1s;    /* Animation transition for hover effects */
 }
 
 .restart-btn:active {
-    transform: scale(1.1);
-    transition: ease-in-out 5ms;
+    transform: scale(1.1);      /* Enlarges the button slightly when pressed */
+    transition: ease-in-out 5ms;    /* Animation transition for the pressing effect */
 }
 
 /* 404 Message styling */
-
 .error-message {
     color: #0d0d0d;
     margin: 100px auto;
     padding: 1em 3em;
     max-width: 480px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  /* Shadow effect for the error message */
     background-color: white;
 }
 
 .error-btn-section {
     display: flex;
-    justify-content: center;
+    justify-content: center;    /* Centers the child elements horizontally */
     padding: 20px;
 }
 
@@ -267,15 +258,15 @@ header a {
 }
 
 .error-btn:hover {
-    cursor: pointer;
+    cursor: pointer;    /* Hand cursor on hover */
     color: #f00;
     background-color: white;
-    transition: ease-in-out .1s;
+    transition: ease-in-out .1s;    /* Animation transition to smoothly change states */
 }
 
 .error-btn:active {
-    transform: scale(1.1);
-    transition: ease-in-out 5ms;
+    transform: scale(1.1);      /* Slightly enlarges the button when pressed */
+    transition: ease-in-out 5ms;    /* Animation transition for the pressing effect */
 }
 
 /* ------------ MEDIA QUERIES ------------ */
@@ -294,7 +285,7 @@ header a {
     }
 }
 
-/* For larger to medium screens size from 650px wide and down */
+/* For larger to medium screens size from 730px wide and down */
 @media screen and (max-width: 730px) {
     body {
         width: 80vw;
@@ -306,7 +297,7 @@ header a {
     }
 }
 
-/* For larger to medium screens size from 650px wide and down */
+/* For larger to medium screens size from 620px wide and down */
 @media screen and (max-width: 620px) {
     body {
         width: 90vw;
