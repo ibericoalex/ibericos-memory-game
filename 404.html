@@ -23,33 +23,35 @@
 </head>
 
 <body>
-        <!-- HEADER - includes text logo and music control section -->
-        <header>        
-            <a href="index.html">
-                <h1>Iberico's memory game</h1>
-            </a>          
-            
-            <div class="sound-toggle">
-                <p class="sound-intro"></p>
-                <audio src="assets/audio/VibeSlomow.mp3" id="soundtrack"></audio>
-                <button id="audio-toggle" aria-label="play soundtrack" class="sound-btn">
-                    <i class="fa-solid fa-play play-icon" id="play-icon"></i>
-                    <i class="fa-solid fa-pause pause-icon" id="pause-icon"></i>
-                </button>
-            </div>
-        </header>
+    <!-- HEADER - includes text logo and audio controls -->
+    <header>        
+        <a href="index.html">
+            <h1>Iberico's memory game</h1>
+        </a>          
+        
+        <div class="sound-toggle">
+            <p class="sound-intro"></p>
+            <audio src="assets/audio/VibeSlomow.mp3" id="soundtrack"></audio>
+            <button id="audio-toggle" aria-label="play soundtrack" class="sound-btn">
+                <i class="fa-solid fa-play play-icon" id="play-icon"></i>
+                <i class="fa-solid fa-pause pause-icon" id="pause-icon"></i>
+            </button>
+        </div>
+    </header>
 
+    <!-- ERROR MESSAGE SECTION -->
     <div class="error-message">
         <h2>Oops! Looks like you took a wrong turn.</h2>
         <p>This isn't the card you were looking for. But don't worry, you can shuffle back to the starting point.</p>
         <form class="error-btn-section" action="index.html" method="get" target="_self">
-            <button class="error-btn" type="submit">Start again!</button>
+            <button class="error-btn" type="submit" aria-label="redirects to homepage">Start again!</button>
          </form>
     </div>
     
- 
-    <script src="assets/js/script.js"></script>
-    <noscript>Your browser currently does not support JavaScript or has it disabled. To play the game, please enable JavaScript in your settings.</noscript>
+ <!-- JavaScript -->
+ <script src="assets/js/script.js"></script>
+ <!-- Message displayed if JS fails to load -->
+ <noscript>Your browser currently does not support JavaScript or has it disabled. To play the game, please enable JavaScript in your settings.</noscript>
 
 </body>
 </html>
