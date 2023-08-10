@@ -28,8 +28,8 @@
         <h2 class="modal-title">Iberico's memory game</h2>
         <form class="modal-form" method="dialog">
             <label for="player-name-input">Enter your username!</label>                
-            <input id="player-name-input" name="player-name" class="modal-input" type="text">                
-            <button class="modal-start-btn" id="modal-start-btn" type="submit" aria-label="start game">
+            <input id="player-name-input" name="player-name" class="modal-input" type="text" aria-label="input yout name">                
+            <button class="modal-start-btn" id="modal-start-btn" type="submit" aria-label="start game button">
                 <strong>Start Game!</strong>
             </button>   
         </form>
@@ -40,9 +40,11 @@
 
 
     <!-- HEADER - includes text logo and music control section -->
-    <header>        
-        <h1>Iberico's memory game</h1>        
-        
+    <header> 
+        <a href="index.html">
+            <h1>Iberico's memory game</h1>
+        </a>      
+          
         <div class="sound-toggle">
             <p class="sound-intro"></p>
             <audio src="assets/audio/VibeSlomow.mp3" id="soundtrack"></audio>
