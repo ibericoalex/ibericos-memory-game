@@ -4,7 +4,7 @@
    - [User Testing](#user-testing "User Testing")
    - [Manual Testing](#manual-testing "Manual Testing")
    - [Cross-browser Testing](#cross-browser-testing "Cross-browser Testing")
-   - [Compatability and Responsiveness Testing](#compatability-and-responsiveness-testing "Compatability and Responsiveness Testing")
+   - [Compatibility and Responsiveness Testing](#compatibility-and-responsiveness-testing "Compatibility and Responsiveness Testing")
 2. [Bugs](#bugs "Bugs")
 3. [Validator Testing](#validator-testing "Validator Testing")
    - [HTML Validator](#html-validator "HTML Validator")    
@@ -73,12 +73,12 @@ Thorough manual testing was conducted during the project's development, aligning
 
 ### **Cross-browser Testing**
 
-Once the site was published on GitHub Pages, I conducted thorough testing on multiple browsers, including Chrome, Firefox, and Edge. I'm pleased to report that the site loaded flawlessly on all browsers without any issues or discrepancies.
+After publishing the site on GitHub Pages, I tested it on multiple browsers: Chrome, Firefox, and Edge. I'm pleased to report that the site loaded flawlessly on all browsers without any issues or discrepancies.
 
-### **Compatability and Responsiveness Testing**
+### **Compatibility and Responsiveness Testing**
 I personally tested the site on my iPhone 13 Pro and utilized DevTools to ensure responsiveness across various screen sizes. The site performed seamlessly on all devices, and the content adjusted flawlessly as intended for each screen size.
 
-- Iphone Pro 13
+- iPhone Pro 13
  
 ![Index](./assets/documentation/iphone13.png)
  
@@ -100,14 +100,10 @@ During the website development process, no significant bugs were encountered. Ho
 
 The [W3C Markup Validation Service](https://validator.w3.org/) for the HTML code was passed in as a URL and returned follwiing message: "Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed."
 
-   **=> After consultation with my mentor, I was advised to use sections instead of divs, as it's the best practice in this context.**
+   **=> After consultation with my mentor, I was advised to not take action regarding the comment and use sections instead of divs, as it's the best practice in this context.**
  
 - [Index Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fibericoalex.github.io%2Fibericos-memory-game%2F)
 ![Index Page](./assets/documentation/HTML-validator.png)
-
-After consultation with my mentor, I was advised to use sections instead of divs, as it's the best practice in this context.
-
-
 
 ### **CSS Validator**
 

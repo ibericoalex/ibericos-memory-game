@@ -1,6 +1,6 @@
 # **Iberico's Memory Game - Portfolio Project 2**
 
-Dive into Iberico's Memory Game, a card game challenge inspired by the previous [Portfolio Project 1 - Iberico Alex Photography](https://github.com/ibericoalex/iberico-alex-photography/tree/main). Consider this an engaging extension that complements the original [PP1 website](https://ibericoalex.github.io/iberico-alex-photography/).
+Dive into Iberico's Memory Game, a card game challenge inspired by previous [Portfolio Project 1 - Iberico Alex Photography](https://github.com/ibericoalex/iberico-alex-photography/). Consider this an engaging extension that complements the original [PP1 website](https://ibericoalex.github.io/iberico-alex-photography/).
 
 In this game, players match cards while racing against time and moves to secure top scores.
 
@@ -23,7 +23,7 @@ Live deployment link can be found [here](https://ibericoalex.github.io/ibericos-
    - [Music Player](#music-player "Music Player")
    - [Favicon](#favicon "Favicon")
    - [Game Description](#game-description "Game Description")
-   - [Game Metrics](#game_metrics "Game metrics")
+   - [Game Metrics](#game-metrics "Game Metrics")
    - [Memory Card Game](#memory-card-game "Memory Card Game")
    - [Endgame Modal](#endgame-modal "Endgame Modal")
    - [404 error message page](#404-error-message-page "404 error message page")
@@ -114,9 +114,9 @@ The Game Description offers a brief insight into Iberico Alex's artistry while i
 
 ![Game Description](./assets/documentation/game-description.png)
 
-### Game metrics
+### Game Metrics
 
-This section lets you monitor the elapsed time and the number of moves made, offering real-time performance insights. Additionally, it displays your top scores from previous games..
+This section lets you monitor the elapsed time and the number of moves made, offering real-time performance insights. Additionally, it displays your top scores from previous games.
 
 ![Game Description](./assets/documentation/game-info.png)
 
@@ -173,7 +173,7 @@ The procedure for deployment followed the "Creating your site" steps provided in
 
 This repository can be cloned and run locally with the following steps:
 - Login to GitHub.
-- Select repository named: ibericoalex/iberico-alex-photography
+- Select repository named: ibericoalex/ibericos-memory-game
 - Click code toggle button and copy the url (i.e., https://github.com/ibericoalex/ibericos-memory-game).
 - In your IDE, open the terminal and run the git clone command (i.e., git clone https://ibericoalex.github.io/ibericos-memory-game). The repository will now be cloned in your workspace.
 
