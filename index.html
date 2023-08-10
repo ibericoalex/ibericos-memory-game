@@ -15,7 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-     <!-- Font awesome kit link for icons. -->
+     <!-- Font awesome kit link for icons -->
      <script src="https://kit.fontawesome.com/f026990e6c.js" crossorigin="anonymous"></script>
 
     <!-- Favicon -->
@@ -23,7 +23,7 @@
 </head>
 
 <body onload="openModal()">
-    <!-- START MODAL - retrieves cutom user name -->
+    <!-- START MODAL - fetches user's custom name -->
     <dialog class="modal" id="modal">
         <h2 class="modal-title">Iberico's memory game</h2>
         <form class="modal-form" method="dialog">
@@ -39,7 +39,7 @@
     </dialog>
 
 
-    <!-- HEADER - includes text logo and music control section -->
+    <!-- HEADER - includes text logo and audio controls -->
     <header> 
         <a href="index.html">
             <h1>Iberico's memory game</h1>
@@ -49,13 +49,13 @@
             <p class="sound-intro"></p>
             <audio src="assets/audio/VibeSlomow.mp3" id="soundtrack"></audio>
             <button id="audio-toggle" aria-label="play soundtrack" class="sound-btn">
-                <i class="fa-solid fa-play play-icon" id="play-icon"></i>
-                <i class="fa-solid fa-pause pause-icon" id="pause-icon"></i>
+                <i class="fa-solid fa-play play-icon" id="play-icon" aria-label="play sound"></i>
+                <i class="fa-solid fa-pause pause-icon" id="pause-icon" aria-label="stop sound"></i>
             </button>
         </div>
     </header>
 
-    <!-- GAME DESCRIPTION -->
+    <!-- GAME DESCRIPTION - includes personalized player welcome message -->
     <section class="description">
         <p>Dive deep into the enchanting world of Iberico Alex's artistry. Engage your senses and memory in this captivating card game, where every flip reveals a glimpse into his creative universe. Challenge yourself and revel in the playful dance of memory and artistry!</p>            
         <div class="welcome-player">
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <!--  Time and Moves section -->    
+    <!--  GAME METRICS - Time, Best score and Moves section -->    
     <section class="game-info">
         <div class="timer">
             <h3>Time:</h3><span class="counter" id="timer">00:00</span>
@@ -133,7 +133,7 @@
         </div>
     </section>    
 
-    <!-- END Modal - Win message + reset button. -->
+    <!-- END Modal - victory message with reset button -->
     <dialog class="modal win-modal" id="win-modal">
         <h2 class="modal-heading">Well done!</h2>
         
@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <!-- Restart button. -->
+        <!-- Restart button -->
         <div class="restart-btn-section">
             <button class="restart-btn" id="restart-btn" aria-label="restart game">Play again!</button>   
         </div>                    

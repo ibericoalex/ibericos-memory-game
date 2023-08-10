@@ -56,11 +56,15 @@ header {
     padding: 20px 0;
 }
 
+header a {
+    text-decoration: none;
+}
+
 /* Sound button styling */
 
 .sound-toggle {
     position: fixed;
-    top: .5rem;
+    top: .3rem;
     right: 3rem;
 }
 
