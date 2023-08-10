@@ -32,12 +32,12 @@ let secCounter = 0; // Counts the elapsed seconds
 let numMoves = 0; // Counts the number of card flips
 let matchCounter = 0; // Counts the number of matched pairs
 
-let bestScore = 0; // Variable to store scores
+let bestScore = 0; // Variable to store best scores
 
 
 // MODAL SECTION - source: https://www.youtube.com/watch?v=TAB_v6yBXIE&ab_channel=KevinPowell
 
-// Start Modal Function called by HTML file 
+// Starting Modal Function called by HTML file 
 function openModal() {
   modal.showModal();
 }
@@ -112,7 +112,7 @@ function startTimer() {
 
 // MEMORY GAME CARD SECTION - source: https://www.youtube.com/watch?v=ZniVgo8U7ek&t=139s
 
-// Keep track of and display the count of moves
+// Monitor and show move count
 function incrementScore() {
   numMoves++;
   moveCounter.innerHTML = numMoves;
@@ -202,7 +202,7 @@ function startGame() {
 
   // Check if the 'playerNameInput' has a value
   // If it's empty, set the innerHTML of 'playerName' to "Your"
-  // Otherwise, use the entered name
+  // Otherwise, use the entered name/value
   if (playerNameInput.value === "") {
     playerName.innerHTML = "Your";
   } else {
